@@ -25,6 +25,14 @@ Already using a desktop build? Exit it from the tray before opening the new copy
 | Make the overlay easier to read | Adjust **Scale** for the whole player and **Text Size** for the lettering. Each layout remembers its settings. |
 | Get a newer version | Open **Settings → Check for Updates**. If an update is available, Lilody asks before downloading and restarting. |
 
+## Streamer.bot actions
+
+The Windows ZIP includes **Lilody-Actions.sb** with all 14 commands. Import it into Streamer.bot, then open **Commands** in Lilody. Turn on **Handle In Streamer.bot** for the commands you want to manage there. Each switch includes that command’s aliases. The top switch changes them all. All switches start off.
+
+For example, attach your VIP-only `!np` command and a channel-point reward to the same **Lilody → Now Playing** action. Either trigger runs the command and sends the reply through your bot account. Add your own triggers and permissions in Streamer.bot. The action handles the reply for you.
+
+Without a WebSocket password, Lilody can listen to chat, but its built-in commands such as `!np` and `!sq` cannot post replies. For those replies, enable Authentication in Streamer.bot and enter the same password in Lilody. You can leave Enforce off for other tools that only listen.
+
 ### If something looks disconnected
 
 Open **Connections** to check Spotify and Streamer.bot. Keep Streamer.bot running with its WebSocket server started. Twitch, Kick and YouTube use the accounts you connected there. For YouTube, select a broadcast with an active live chat.
